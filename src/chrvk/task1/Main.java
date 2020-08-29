@@ -8,28 +8,17 @@ package chrvk.task1;
   то вместо него вывести HelloWorld*/
 
 public class Main {
-    public static final byte number = 100;
-
-    public static StringBuilder CreateLine(StringBuilder line){
-        for(int i = 0; i < number; i++) {
-            if(i % 3 == 0) {
-                if(i % 5 == 0){
-                    line.append("HelloWorld").append(" ");
-                }
-                line.append("Hello").append(" ");
-            }
-            else if(i % 5 == 0) {
-                line.append("World").append(" ");
-            }
-            else {
-                line.append(i).append(" ");
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("HelloWorld ");
+            } else if (i % 3 == 0) {
+                System.out.print("Hello ");
+            } else if (i % 5 == 0) {
+                System.out.print("World ");
+            } else {
+                System.out.print(i + " ");
             }
         }
-        return line;
-    }
-    public static void main(String[] args) {
-        StringBuilder line = new StringBuilder();
-        CreateLine(line);
-        System.out.println(line);
     }
 }
