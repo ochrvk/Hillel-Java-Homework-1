@@ -1,4 +1,4 @@
-package chrvk.task1;
+package chrvk.hw1.task1;
 
 /*Вывести ряд чисел от 1 до 100 через пробел,
   с изменениями:

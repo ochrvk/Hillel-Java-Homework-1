@@ -1,4 +1,4 @@
-package chrvk.task2;
+package chrvk.hw1.task2;
 
 import java.util.Random;
 

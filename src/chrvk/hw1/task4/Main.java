@@ -1,4 +1,4 @@
-package chrvk.task4;
+package chrvk.hw1.task4;
 
 /*
 Написать метод который убирает лишние пробелы
@@ -6,14 +6,16 @@ package chrvk.task4;
 Убрать начальные, конечные и между словами
 должно быть не больше 1 пробела.
 */
+
 public class Main {
-    public static String DeleteSpace(String line){
-        line = line.replaceAll(" +", " ");
-        line = line.trim();
+    public static String removeSpace(String line) {
+        line = line.replaceAll("\\s+", " ").trim();
         return line;
     }
+
     public static void main(String[] args) {
         String line = " В  этой    строке лишние     пробелы ";
-        System.out.println(DeleteSpace(line));
+        System.out.println("До: [" + line + "]");
+        System.out.println("После: [" + removeSpace(line) + "]");
     }
 }

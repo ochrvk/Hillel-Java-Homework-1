@@ -1,4 +1,4 @@
-package chrvk.task3;
+package chrvk.hw1.task3;
 
 /*Написать метод который вернет String
 в которой будут в одну строку числа от 1 до 30.
