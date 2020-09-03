@@ -8,7 +8,11 @@ a t e s t
 q v u t r
 Массив загрузить из текстового файла*/
 
-import java.io.*;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
 
