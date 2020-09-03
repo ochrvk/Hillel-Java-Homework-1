@@ -8,41 +8,43 @@ a t e s t
 q v u t r
 Массив загрузить из текстового файла*/
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
 
     public static void fileWrite(File file) {
+        FileWriter writer;
         try {
-            FileWriter writer = new FileWriter(file, false);
+            writer = new FileWriter(file, false);
             writer.write("a z r g z\n" +
                     "a t e s t\n" +
                     "q v u t r\n");
             writer.close();
-        } catch (Exception e) {
-            System.out.println("Exception " + e);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
     public static char[][] fileRead(File file) {
-        String[] tmp = null;
+        String[] tmp;
+        FileReader fr;
+        StringBuilder fileData = new StringBuilder();
+
         try {
-            FileReader fr = new FileReader(file);
+            fr = new FileReader(file);
             Scanner scan = new Scanner(fr);
-            StringBuilder fileData = new StringBuilder();
 
             while (scan.hasNextLine()) {
                 fileData.append(scan.nextLine()).append("\n");
             }
             fr.close();
-            tmp = fileData.toString().split("\n");
-        } catch (Exception e) {
-            System.out.println("Exception" + e);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
+        tmp = fileData.toString().split("\n");
 
         for (int i = 0; i < Objects.requireNonNull(tmp).length; i++) {
             tmp[i] = tmp[i].replaceAll(" ", "");
