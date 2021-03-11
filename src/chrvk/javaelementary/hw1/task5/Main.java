@@ -1,4 +1,4 @@
-package chrvk.JavaElementary.hw1.task5;
+package chrvk.javaelementary.hw1.task5;
 
 /*Задан 2-мерный массив char и слово.
 Написать метод который определит есть ли по вертикали или горизонтали это слово.

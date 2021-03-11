@@ -1,4 +1,4 @@
-package chrvk.JavaElementary.hw1.task2;
+package chrvk.javaelementary.hw1.task2;
 
 import java.util.Random;
 

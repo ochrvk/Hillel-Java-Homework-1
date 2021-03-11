@@ -1,4 +1,4 @@
-package chrvk.JavaElementary.hw1.task4;
+package chrvk.javaelementary.hw1.task4;
 
 /*
 Написать метод который убирает лишние пробелы
