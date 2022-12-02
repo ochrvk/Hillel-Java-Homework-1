@@ -1,14 +1,5 @@
 package chrvk.javaelementary.hw1.task5;
 
-/*Задан 2-мерный массив char и слово.
-Написать метод который определит есть ли по вертикали или горизонтали это слово.
-Например, в данном случае для слова test метод должен вернуть true:
-a z r g z
-a t e s t
-q v u t r
-Массив загрузить из текстового файла*/
-
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -109,7 +100,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        File file = new File("src/chrvk/hw1/task5/file.txt");
+        File file = new File("src/chrvk/javaelementary/hw1/task5/file.txt");
 
         fileWrite(file);
         char[][] array = fileRead(file);

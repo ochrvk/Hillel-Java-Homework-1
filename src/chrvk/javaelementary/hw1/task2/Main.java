@@ -2,10 +2,6 @@ package chrvk.javaelementary.hw1.task2;
 
 import java.util.Random;
 
-/*Заполнить массив из 10 элементов случайными целыми числами
- от 10(включительно) до 20(включительно).
- Вывести среднее арифметическое.*/
-
 public class Main {
     public static final int sizeArray = 10;
 
